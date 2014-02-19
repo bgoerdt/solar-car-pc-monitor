@@ -16,3 +16,12 @@
 \\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.csproj.GenerateResource.Cache
 \\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.exe
 \\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.pdb
+D:\SolarCarPCMonitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.exe.config
+D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.exe
+D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.pdb
+D:\SolarCarPCMonitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.exe
+D:\SolarCarPCMonitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.pdb
+D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.csprojResolveAssemblyReference.cache
+D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.Form1.resources
+D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.Properties.Resources.resources
+D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.csproj.GenerateResource.Cache

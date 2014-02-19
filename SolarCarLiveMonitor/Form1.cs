@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO.Ports;
+using System.IO;
 
 namespace SolarCarLiveMonitor
 {
@@ -22,6 +23,12 @@ namespace SolarCarLiveMonitor
 		{
 			InitializeComponent();
 
+			processBluetooth();
+
+		}
+
+		private void processBluetooth()
+		{
 			//connect to Bluetooth device
 			connected = true; // while testing
 
@@ -33,72 +40,99 @@ namespace SolarCarLiveMonitor
 				while (dataQueue.Count != 0)
 				{
 					string data = dataQueue.Dequeue();
+					string field = "";
+					string value = "";
+					double dVal = 0.0;
 
 					try
 					{
-						string field = data.Substring(0, 3);
-						double value = Convert.ToDouble(data.Substring(4));
-
+						field = data.Substring(0, 3);
+						value = data.Substring(4);
+					}
+					catch (ArgumentOutOfRangeException exception)
+					{
+						Console.WriteLine(exception);
+						//MessageBox.Show(exception.ToString());
+						continue;
+					}
 						switch (field)
 						{
 							// solar intensity voltage
 							case "SIV":
-								if (value < 0.0 || value > 16.0)
+								dVal = Convert.ToDouble(value);
+								if (dVal < 0.0 || dVal > 16.0)
 									continue;
-								
+								SIChart.Series["SIVoltageSeries"].Points.AddXY(0,dVal);
+								SIVoltLabel.Text = value + " V";
 								break;
 							// solar intensity amplitude
 							case "SIA":
-								if (value < 0.0 || value > 2.0)
+								dVal = Convert.ToDouble(value);
+								if (dVal < 0.0 || dVal > 2.0)
 									continue;
+								SIChart.Series["SICurrentSeries"].Points.AddXY(0, dVal);
+								SICurrLabel.Text = value + " C";
 								break;
 							// duty cycle
 							case "DCY":
-								if (value < 33.0 || value > 100.0)
+								dVal = Convert.ToDouble(value);
+								if (dVal < 33.0 || dVal > 100.0)
 									continue;
+								dutyCycleLabel.Text = value + "%";
 								break;
 							// battery charge
 							case "BAT":
-								if (value < 0.0 || value > 100.0)
+								dVal = Convert.ToDouble(value);
+								if (dVal < 0.0 || dVal > 100.0)
 									continue;
+								batteryChargeChart.Series[0].Points.AddXY(0, dVal);
+								batteryVisChart.Series[0].Points[0].Equals(new System.Windows.Forms.DataVisualization.Charting.DataPoint(0, dVal));
 								break;
 							// power generated
 							case "PWR":
-								if (value < 0.0 || value > 16.0)
+								dVal = Convert.ToDouble(value);
+								if (dVal < 0.0 || dVal > 16.0)
 									continue;
+								powerGenChart.Series[0].Points.AddXY(0, dVal);
+								powGenVoltLabel.Text = value + " V";
 								break;
 							// power source
 							case "SRC":
-								string src = value.ToString();
-								if (src != "S" || src != "B")
+								if (!(value == "S" || value == "B"))
 									continue;
+								else if (value.Equals("S"))
+									powGenSrcLabel.Text = "Solar";
+								else if (value.Equals("B"))
+									powGenSrcLabel.Text = "Battery";
 								break;
 							// bluetooth device distance
 							case "DIS":
-								if (value < 0.0 || value > 150.0)
+								dVal = Convert.ToDouble(value);
+								if (dVal < 0.0 || dVal > 150.0)
 									continue;
+								distLabel.Text = value + "m";
+								// while testing
+								System.Threading.Thread.Sleep(1000);
+								Console.WriteLine(dataQueue.Count.ToString());
 								break;
 							default:
 								break;
 						}
-
-						// while testing
-						System.Threading.Thread.Sleep(1000);
-					}
-					catch (Exception e)
-					{
-						continue;
-					}
 				}
 			}
-
-
 		}
+
 
 		// get test data from txt file and place in data queue
 		public void getTestData()
 		{
-
+			StreamReader reader = new StreamReader("..//..//bluetoothTestData.txt");
+			string line = "";
+			while ((line = reader.ReadLine()) != null)
+			{
+				if(!line.Equals(""))
+					dataQueue.Enqueue(line);
+			}
 		}
 
 
