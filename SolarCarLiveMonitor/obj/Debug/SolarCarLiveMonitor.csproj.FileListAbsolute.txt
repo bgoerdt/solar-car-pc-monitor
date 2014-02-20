@@ -7,15 +7,6 @@
 \\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\Visual Studio 2012\Projects\SolarCarLiveMonitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.pdb
 \\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\Visual Studio 2012\Projects\SolarCarLiveMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.exe
 \\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\Visual Studio 2012\Projects\SolarCarLiveMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.pdb
-\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.exe.config
-\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.exe
-\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.pdb
-\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.csprojResolveAssemblyReference.cache
-\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.Form1.resources
-\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.Properties.Resources.resources
-\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.csproj.GenerateResource.Cache
-\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.exe
-\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.pdb
 D:\SolarCarPCMonitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.exe.config
 D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.exe
 D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.pdb
@@ -25,3 +16,12 @@ D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.csprojRes
 D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.Form1.resources
 D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.Properties.Resources.resources
 D:\SolarCarPCMonitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.csproj.GenerateResource.Cache
+\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.exe.config
+\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.exe
+\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\bin\Debug\SolarCarLiveMonitor.pdb
+\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.csprojResolveAssemblyReference.cache
+\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.Form1.resources
+\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.Properties.Resources.resources
+\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.csproj.GenerateResource.Cache
+\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.exe
+\\engin.uiowa.edu\stuff\Home\bgoerdt\Documents\solar-car-pc-monitor\SolarCarLiveMonitor\obj\Debug\SolarCarLiveMonitor.pdb
