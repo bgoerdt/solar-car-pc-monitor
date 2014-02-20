@@ -91,22 +91,20 @@ namespace SolarCarLiveMonitor
 					// solar intensity voltage
 					case "SIV":
 						dVal = Convert.ToDouble(value);
-						dVal = recentVoltage;
 						if (dVal < 0.0 || dVal > 16.0)
 							return;
 						graphShift(SIChart, 0);
-						SIChart.Series["SIVoltageSeries"].Points.AddXY(0,dVal);
+						SIChart.Series[0].Points.AddXY(0,dVal);
 						SIVoltLabel.Text = value + " V";
 						break;
 					// solar intensity amplitude
 					case "SIC":
 						dVal = Convert.ToDouble(value);
-						if (dVal < 0.0 || dVal > 2.0)
+						if (dVal < 0.0 || dVal > 200.0)
 							return;
 						graphShift(SIChart, 1);
-						SIChart.Series["SICurrentSeries"].Points.AddXY(0, dVal);
-						SICurrLabel.Text = value + " A";
-						batteryChargeChart.Series[0].Points.AddXY(recentVoltage, dVal);
+						SIChart.Series[1].Points.AddXY(0, dVal);
+						SICurrLabel.Text = value + " mA";
 						break;
 					// duty cycle
 					case "DCY":

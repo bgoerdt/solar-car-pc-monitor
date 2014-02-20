@@ -28,16 +28,16 @@
 		/// </summary>
 		private void InitializeComponent()
 		{
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea1 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Series series1 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.Series series2 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea2 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Series series3 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint1 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 100D);
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea3 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Series series4 = new System.Windows.Forms.DataVisualization.Charting.Series();
-			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea4 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
-			System.Windows.Forms.DataVisualization.Charting.Series series5 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea5 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Series series6 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.Series series7 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea6 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Series series8 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.DataPoint dataPoint2 = new System.Windows.Forms.DataVisualization.Charting.DataPoint(0D, 100D);
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea7 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Series series9 = new System.Windows.Forms.DataVisualization.Charting.Series();
+			System.Windows.Forms.DataVisualization.Charting.ChartArea chartArea8 = new System.Windows.Forms.DataVisualization.Charting.ChartArea();
+			System.Windows.Forms.DataVisualization.Charting.Series series10 = new System.Windows.Forms.DataVisualization.Charting.Series();
 			this.solarIntensityGroupBox = new System.Windows.Forms.GroupBox();
 			this.SIVoltLabel = new System.Windows.Forms.Label();
 			this.SICurrLabel = new System.Windows.Forms.Label();
@@ -53,11 +53,11 @@
 			this.batteryVisChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			this.batteryChargeChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
 			this.powerGenerationGroupBox = new System.Windows.Forms.GroupBox();
+			this.label1 = new System.Windows.Forms.Label();
 			this.powGenSrcLabel = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
 			this.powGenVoltLabel = new System.Windows.Forms.Label();
 			this.powerGenChart = new System.Windows.Forms.DataVisualization.Charting.Chart();
-			this.label1 = new System.Windows.Forms.Label();
 			this.solarIntensityGroupBox.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.SIChart)).BeginInit();
 			this.connectionStatusGroupBox.SuspendLayout();
@@ -90,48 +90,50 @@
 			this.SIVoltLabel.Padding = new System.Windows.Forms.Padding(10);
 			this.SIVoltLabel.Size = new System.Drawing.Size(101, 62);
 			this.SIVoltLabel.TabIndex = 4;
-			this.SIVoltLabel.Text = "00.0 V";
+			this.SIVoltLabel.Text = "00.00 V";
 			this.SIVoltLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// SICurrLabel
 			// 
 			this.SICurrLabel.BackColor = System.Drawing.Color.Khaki;
-			this.SICurrLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.SICurrLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.SICurrLabel.Location = new System.Drawing.Point(368, 185);
 			this.SICurrLabel.Name = "SICurrLabel";
 			this.SICurrLabel.Padding = new System.Windows.Forms.Padding(10);
 			this.SICurrLabel.Size = new System.Drawing.Size(101, 62);
 			this.SICurrLabel.TabIndex = 3;
-			this.SICurrLabel.Text = "00.0 A";
+			this.SICurrLabel.Text = "00.00 mA";
 			this.SICurrLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// SIChart
 			// 
 			this.SIChart.BorderlineColor = System.Drawing.Color.DarkGray;
 			this.SIChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-			chartArea1.AxisX.IsReversed = true;
-			chartArea1.AxisX.Maximum = 50D;
-			chartArea1.AxisX.Minimum = 0D;
-			chartArea1.AxisY.Maximum = 16D;
-			chartArea1.AxisY.Minimum = 0D;
-			chartArea1.AxisY.Title = "Voltage (V)";
-			chartArea1.AxisY2.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
-			chartArea1.AxisY2.Maximum = 2D;
-			chartArea1.AxisY2.Minimum = 0D;
-			chartArea1.AxisY2.Title = "Current (A)";
-			chartArea1.Name = "ChartArea1";
-			this.SIChart.ChartAreas.Add(chartArea1);
+			chartArea5.AxisX.IsReversed = true;
+			chartArea5.AxisX.Maximum = 50D;
+			chartArea5.AxisX.Minimum = 0D;
+			chartArea5.AxisY.Maximum = 16D;
+			chartArea5.AxisY.Minimum = 0D;
+			chartArea5.AxisY.Title = "Voltage (V)";
+			chartArea5.AxisY2.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.True;
+			chartArea5.AxisY2.Maximum = 200D;
+			chartArea5.AxisY2.Minimum = 0D;
+			chartArea5.AxisY2.Title = "Current (mA)";
+			chartArea5.Name = "ChartArea1";
+			this.SIChart.ChartAreas.Add(chartArea5);
 			this.SIChart.Location = new System.Drawing.Point(6, 19);
 			this.SIChart.Name = "SIChart";
-			series1.ChartArea = "ChartArea1";
-			series1.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-			series1.Name = "SIVoltageSeries";
-			series2.ChartArea = "ChartArea1";
-			series2.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-			series2.Name = "SICurrentSeries";
-			series2.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
-			this.SIChart.Series.Add(series1);
-			this.SIChart.Series.Add(series2);
+			series6.ChartArea = "ChartArea1";
+			series6.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+			series6.Color = System.Drawing.Color.RoyalBlue;
+			series6.Name = "SIVoltageSeries";
+			series7.ChartArea = "ChartArea1";
+			series7.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+			series7.Color = System.Drawing.Color.Gold;
+			series7.Name = "SICurrentSeries";
+			series7.YAxisType = System.Windows.Forms.DataVisualization.Charting.AxisType.Secondary;
+			this.SIChart.Series.Add(series6);
+			this.SIChart.Series.Add(series7);
 			this.SIChart.Size = new System.Drawing.Size(356, 300);
 			this.SIChart.TabIndex = 2;
 			this.SIChart.Text = "chart2";
@@ -156,7 +158,7 @@
 			this.dutyCycleLabel.Padding = new System.Windows.Forms.Padding(10);
 			this.dutyCycleLabel.Size = new System.Drawing.Size(101, 53);
 			this.dutyCycleLabel.TabIndex = 5;
-			this.dutyCycleLabel.Text = "XX.X%";
+			this.dutyCycleLabel.Text = "00.00%";
 			this.dutyCycleLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// connectionStatusGroupBox
@@ -235,33 +237,33 @@
 			// 
 			this.batteryVisChart.BorderlineColor = System.Drawing.Color.DarkGray;
 			this.batteryVisChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-			chartArea2.Area3DStyle.Enable3D = true;
-			chartArea2.Area3DStyle.Inclination = 5;
-			chartArea2.Area3DStyle.PointDepth = 25;
-			chartArea2.Area3DStyle.Rotation = 25;
-			chartArea2.AxisX.LabelStyle.Enabled = false;
-			chartArea2.AxisX.MajorGrid.Enabled = false;
-			chartArea2.AxisX.MajorTickMark.Enabled = false;
-			chartArea2.AxisX.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
-			chartArea2.AxisX2.MajorGrid.Enabled = false;
-			chartArea2.AxisX2.MajorTickMark.Enabled = false;
-			chartArea2.AxisY.Maximum = 100D;
-			chartArea2.AxisY.Minimum = 0D;
-			chartArea2.AxisY.Title = "Battery Charge Percentage";
-			chartArea2.AxisY2.MajorGrid.Enabled = false;
-			chartArea2.AxisY2.MajorTickMark.Enabled = false;
-			chartArea2.Name = "ChartArea1";
-			this.batteryVisChart.ChartAreas.Add(chartArea2);
+			chartArea6.Area3DStyle.Enable3D = true;
+			chartArea6.Area3DStyle.Inclination = 5;
+			chartArea6.Area3DStyle.PointDepth = 25;
+			chartArea6.Area3DStyle.Rotation = 25;
+			chartArea6.AxisX.LabelStyle.Enabled = false;
+			chartArea6.AxisX.MajorGrid.Enabled = false;
+			chartArea6.AxisX.MajorTickMark.Enabled = false;
+			chartArea6.AxisX.MinorTickMark.LineColor = System.Drawing.Color.Transparent;
+			chartArea6.AxisX2.MajorGrid.Enabled = false;
+			chartArea6.AxisX2.MajorTickMark.Enabled = false;
+			chartArea6.AxisY.Maximum = 100D;
+			chartArea6.AxisY.Minimum = 0D;
+			chartArea6.AxisY.Title = "Battery Charge Percentage";
+			chartArea6.AxisY2.MajorGrid.Enabled = false;
+			chartArea6.AxisY2.MajorTickMark.Enabled = false;
+			chartArea6.Name = "ChartArea1";
+			this.batteryVisChart.ChartAreas.Add(chartArea6);
 			this.batteryVisChart.Location = new System.Drawing.Point(368, 74);
 			this.batteryVisChart.Name = "batteryVisChart";
 			this.batteryVisChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.SeaGreen;
-			series3.ChartArea = "ChartArea1";
-			series3.Name = "Series1";
-			dataPoint1.BorderWidth = 1;
-			dataPoint1.IsValueShownAsLabel = true;
-			dataPoint1.Label = "#VAL%";
-			series3.Points.Add(dataPoint1);
-			this.batteryVisChart.Series.Add(series3);
+			series8.ChartArea = "ChartArea1";
+			series8.Name = "Series1";
+			dataPoint2.BorderWidth = 1;
+			dataPoint2.IsValueShownAsLabel = true;
+			dataPoint2.Label = "#VAL%";
+			series8.Points.Add(dataPoint2);
+			this.batteryVisChart.Series.Add(series8);
 			this.batteryVisChart.Size = new System.Drawing.Size(101, 186);
 			this.batteryVisChart.TabIndex = 2;
 			this.batteryVisChart.Text = "chart2";
@@ -270,21 +272,21 @@
 			// 
 			this.batteryChargeChart.BorderlineColor = System.Drawing.Color.DarkGray;
 			this.batteryChargeChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-			chartArea3.AxisX.IsReversed = true;
-			chartArea3.AxisX.Maximum = 50D;
-			chartArea3.AxisX.Minimum = 0D;
-			chartArea3.AxisY.Maximum = 100D;
-			chartArea3.AxisY.Minimum = 0D;
-			chartArea3.AxisY.Title = "Battery Charge (%)";
-			chartArea3.Name = "ChartArea1";
-			this.batteryChargeChart.ChartAreas.Add(chartArea3);
+			chartArea7.AxisX.IsReversed = true;
+			chartArea7.AxisX.Maximum = 50D;
+			chartArea7.AxisX.Minimum = 0D;
+			chartArea7.AxisY.Maximum = 100D;
+			chartArea7.AxisY.Minimum = 0D;
+			chartArea7.AxisY.Title = "Battery Charge (%)";
+			chartArea7.Name = "ChartArea1";
+			this.batteryChargeChart.ChartAreas.Add(chartArea7);
 			this.batteryChargeChart.Location = new System.Drawing.Point(6, 19);
 			this.batteryChargeChart.Name = "batteryChargeChart";
-			series4.ChartArea = "ChartArea1";
-			series4.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-			series4.Color = System.Drawing.Color.DarkGreen;
-			series4.Name = "batteryChargeSeries";
-			this.batteryChargeChart.Series.Add(series4);
+			series9.ChartArea = "ChartArea1";
+			series9.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+			series9.Color = System.Drawing.Color.DarkGreen;
+			series9.Name = "batteryChargeSeries";
+			this.batteryChargeChart.Series.Add(series9);
 			this.batteryChargeChart.Size = new System.Drawing.Size(356, 300);
 			this.batteryChargeChart.TabIndex = 1;
 			this.batteryChargeChart.Text = "chart2";
@@ -304,6 +306,17 @@
 			this.powerGenerationGroupBox.TabIndex = 2;
 			this.powerGenerationGroupBox.TabStop = false;
 			this.powerGenerationGroupBox.Text = "Power Generation";
+			// 
+			// label1
+			// 
+			this.label1.BackColor = System.Drawing.Color.IndianRed;
+			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.label1.Location = new System.Drawing.Point(25, 28);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(61, 20);
+			this.label1.TabIndex = 9;
+			this.label1.Text = "Power";
+			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// powGenSrcLabel
 			// 
@@ -330,54 +343,43 @@
 			// 
 			// powGenVoltLabel
 			// 
-			this.powGenVoltLabel.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.powGenVoltLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.powGenVoltLabel.BackColor = System.Drawing.Color.IndianRed;
+			this.powGenVoltLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.powGenVoltLabel.Location = new System.Drawing.Point(6, 48);
 			this.powGenVoltLabel.Name = "powGenVoltLabel";
 			this.powGenVoltLabel.Padding = new System.Windows.Forms.Padding(10);
 			this.powGenVoltLabel.Size = new System.Drawing.Size(101, 53);
 			this.powGenVoltLabel.TabIndex = 5;
-			this.powGenVoltLabel.Text = "00.0 W";
+			this.powGenVoltLabel.Text = "00.00 W";
 			this.powGenVoltLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// powerGenChart
 			// 
 			this.powerGenChart.BorderlineColor = System.Drawing.Color.DarkGray;
 			this.powerGenChart.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid;
-			chartArea4.AxisX.IsReversed = true;
-			chartArea4.AxisX.Maximum = 50D;
-			chartArea4.AxisX.Minimum = 0D;
-			chartArea4.AxisY.Maximum = 6D;
-			chartArea4.AxisY.Minimum = 0D;
-			chartArea4.AxisY.Title = "Power (W)";
-			chartArea4.AxisY2.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
-			chartArea4.AxisY2.Maximum = 100D;
-			chartArea4.AxisY2.Minimum = 0D;
-			chartArea4.AxisY2.Title = "Duty Cycle (%)";
-			chartArea4.Name = "ChartArea1";
-			this.powerGenChart.ChartAreas.Add(chartArea4);
+			chartArea8.AxisX.IsReversed = true;
+			chartArea8.AxisX.Maximum = 50D;
+			chartArea8.AxisX.Minimum = 0D;
+			chartArea8.AxisY.Maximum = 1D;
+			chartArea8.AxisY.Minimum = 0D;
+			chartArea8.AxisY.Title = "Power (W)";
+			chartArea8.AxisY2.Enabled = System.Windows.Forms.DataVisualization.Charting.AxisEnabled.False;
+			chartArea8.AxisY2.Maximum = 100D;
+			chartArea8.AxisY2.Minimum = 0D;
+			chartArea8.AxisY2.Title = "Duty Cycle (%)";
+			chartArea8.Name = "ChartArea1";
+			this.powerGenChart.ChartAreas.Add(chartArea8);
 			this.powerGenChart.Location = new System.Drawing.Point(113, 19);
 			this.powerGenChart.Name = "powerGenChart";
 			this.powerGenChart.Palette = System.Windows.Forms.DataVisualization.Charting.ChartColorPalette.EarthTones;
-			series5.ChartArea = "ChartArea1";
-			series5.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
-			series5.Color = System.Drawing.Color.Firebrick;
-			series5.Name = "powerGenPowSeries";
-			this.powerGenChart.Series.Add(series5);
+			series10.ChartArea = "ChartArea1";
+			series10.ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.Line;
+			series10.Color = System.Drawing.Color.Firebrick;
+			series10.Name = "powerGenPowSeries";
+			this.powerGenChart.Series.Add(series10);
 			this.powerGenChart.Size = new System.Drawing.Size(356, 300);
 			this.powerGenChart.TabIndex = 2;
 			this.powerGenChart.Text = "chart3";
-			// 
-			// label1
-			// 
-			this.label1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-			this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.label1.Location = new System.Drawing.Point(25, 28);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(61, 20);
-			this.label1.TabIndex = 9;
-			this.label1.Text = "Power";
-			this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// Form1
 			// 
